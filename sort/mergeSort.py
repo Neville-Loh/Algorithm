@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 """
+This scipt contain the python implementation of merge sort.
 Created on Tue May 12 02:18:32 2020
 
 @author: Neville
 """
-
-import queue
-
-
 
 # Merger Sort(X) psudo code
 # =============================================================================
@@ -21,25 +18,13 @@ import queue
 # Output Merge(A,B)
 # =============================================================================
 
-pQ = queue.PriorityQueue();
-
-pQ.put(3)
-pQ.put(4)
-
-L = [1,2,3,4]
-print(L.pop(0));
-print(L);
-
-
-
-
 """
 The function sort the list with merge sort
 
 Parameter: List X
 return: Sorted List of X 
 
-Time Complexity = 
+Time Complexity = O(n log (n))
 """
 def mergeSort(L):
     #Base case the 
@@ -59,7 +44,6 @@ The function merge the two sorted list in to one
 Parameters: List A, List B
 return: Sorted list of A and B
 
-Time Complexity = 
 """
 def merge(A,B):
     result = []
@@ -85,7 +69,8 @@ def merge(A,B):
     return result
 
 
-
-
-L = [48, 36 , 16, 10, 5, 15, 24, 8, 6]
-print(mergeSort(L))
+# =============================================================================
+# Example call:
+# L = [48, 36 , 16, 10, 5, 15, 24, 8, 6]
+# print(mergeSort(L))
+# =============================================================================
